@@ -82,12 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
                     // looping through all Contacts
                     for (int i = 0; i < pokemons.length(); i++) {
-
                         //TODO: get the JSONObject and its three attributes
-                        JSONObject firstFeature = pokemons.getJSONObject(0);
-                        JSONObject p = firstFeature.getJSONObject("pokemon");
-
-
+                        JSONObject p = pokemons.getJSONObject(i);
                         String name = p.getString("name");
                         String id = p.getString("id");
                         String candy = p.getString("candy");
